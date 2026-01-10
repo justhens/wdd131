@@ -56,12 +56,17 @@ main h1 {
   gap: 1rem;
 }
 
-.two-column .card:first-child {
-  flex: 7;
+.two-column {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 1rem;
 }
 
-.two-column .card:last-child {
-  flex: 3;
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .card {
