@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #74a3d9;
+  color: #ffffff;
+  padding: 1rem 0 0;
+}
+
+#course-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background-color: #808080; 
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  background-color: #003366;
+}
+main {
+  max-width: 1100px;
+  width: 95%;
+  margin: 2rem auto;
+}
+
+main h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.two-column {
+  display: flex;
+  gap: 1rem;
+}
+
+.two-column .card:first-child {
+  flex: 7;
+}
+
+.two-column .card:last-child {
+  flex: 3;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  background-color: #003366;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.about-me .about-content {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.about-me .about-content img {
+  width: 120px;
+  height: auto;
+}
+
+.about-me .about-content.first {
+  flex-direction: row-reverse;
+}
+
+.card ul {
+  margin-left: 1.25rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.card ul li a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-me .about-content {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
