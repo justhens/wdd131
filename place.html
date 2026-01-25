@@ -13,18 +13,16 @@
   <header>
     <h1>Mexico</h1>
   </header>
+  <div class="hero">
+    <picture>
+      <source media="(min-width: 1000px)" srcset="images/mexico-hero-large.webp">
+      <source media="(min-width: 500px)" srcset="images/mexico-hero-medium.webp">
+      <img src="images/mexico-hero-small.webp"
+           alt="Landscape view of Mexico"
+           width="1500"
+           height="750">
+    </picture>
 
-  <main>
-    <div class="hero">
-      <picture>
-        <source media="(min-width: 1000px)" srcset="images/mexico-hero-large.webp">
-        <source media="(min-width: 500px)" srcset="images/mexico-hero-medium.webp">
-        <img src="images/mexico-hero-small.webp"
-             alt="Landscape view of Mexico"
-             width="1500"
-             height="750">
-      </picture>
-    </div>
     <section class="data">
       <h2>Data</h2>
       <p><strong>Capital:</strong> Mexico City</p>
@@ -33,6 +31,7 @@
       <p><strong>Currency:</strong> Mexican Peso (MXN)</p>
       <p><strong>Languages:</strong> Spanish</p>
     </section>
+
     <section class="weather">
       <h2>Weather</h2>
       <p><strong>Temperature:</strong> <span id="temperature">45</span> °F</p>
@@ -40,6 +39,9 @@
       <p><strong>Wind Speed:</strong> <span id="windspeed">10</span> mph</p>
       <p><strong>Wind Chill:</strong> <span id="windchill">—</span></p>
     </section>
+  </div>
+
+  <main>
   </main>
 
   <footer>
