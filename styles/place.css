@@ -3,7 +3,7 @@
   --secondary-color: #ce1126;
   --background-color: #f4f6f4;
   --text-color: #222;
-  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-bg: rgba(255, 255, 255, 0.95);
 }
 
 * {
@@ -26,10 +26,6 @@ header {
   padding: 1.25rem;
 }
 
-header h1 {
-  font-size: 2rem;
-}
-
 .hero {
   position: relative;
 }
@@ -48,22 +44,22 @@ section {
 }
 
 section h2 {
-  margin-bottom: 0.5rem;
   border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 0.5rem;
   padding-bottom: 0.25rem;
   font-size: 1.2rem;
 }
 
-.data p,
-.weather p {
-  margin: 0.25rem 0;
+.weather-mobile img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
 }
 
-main {
-  max-width: 1100px;
-  margin: 0 auto;
+.weather h2::after {
+  content: " ⛅";
+  display: none;
 }
-
 footer {
   background-color: var(--secondary-color);
   color: #fff;
@@ -71,21 +67,6 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
-
-.weather-mobile {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.weather-mobile img {
-  width: 16px;
-  height: 16px;
-}
-
-.weather-desktop {
-  display: none;
-}
-
 @media (min-width: 700px) {
   .hero {
     height: calc(100vh - 155px);
@@ -100,7 +81,6 @@ footer {
   .weather {
     position: absolute;
     max-width: 300px;
-    margin: 0;
   }
 
   .data {
@@ -117,8 +97,7 @@ footer {
     display: none;
   }
 
-  .weather-desktop {
-    display: inline-block;
-    margin-left: 0.5rem;
+  .weather h2::after {
+    display: inline;
   }
 }
