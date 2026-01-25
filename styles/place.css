@@ -32,7 +32,6 @@ header h1 {
 
 .hero {
   position: relative;
-  overflow: hidden;
 }
 
 .hero img {
@@ -73,6 +72,20 @@ footer {
   font-size: 0.9rem;
 }
 
+.weather-mobile {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.weather-mobile img {
+  width: 16px;
+  height: 16px;
+}
+
+.weather-desktop {
+  display: none;
+}
+
 @media (min-width: 700px) {
   .hero {
     height: calc(100vh - 155px);
@@ -91,17 +104,21 @@ footer {
   }
 
   .data {
-    top: 4rem;
+    top: 8rem;
     left: 4rem;
   }
 
   .weather {
-    bottom: 4rem;
+    bottom: 6rem;
     right: 4rem;
   }
-}
-.weather img {
-  width: 50px;
-  height: 50px;
-  vertical-align: right;
+
+  .weather-mobile {
+    display: none;
+  }
+
+  .weather-desktop {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
 }
