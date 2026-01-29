@@ -108,6 +108,8 @@ function renderTemples(filteredTemples) {
     img.src = temple.imageUrl;
     img.alt = temple.templeName;
     img.loading = "lazy";
+    img.width = 400;  
+    img.height = 300; 
 
     const caption = document.createElement("figcaption");
     caption.textContent = `${temple.templeName} - ${temple.location} (${temple.dedicated})`;
