@@ -119,7 +119,8 @@ function renderTemples(filteredTemples) {
     img.height = 300; 
 
     const caption = document.createElement("figcaption");
-    caption.textContent = `${temple.templeName} - ${temple.location} (${temple.dedicated})`;
+    caption.textContent = `${temple.templeName} - ${temple.location} (${temple.dedicated}) - ${temple.area.toLocaleString()} sq ft`;
+
 
     figure.appendChild(img);
     figure.appendChild(caption);
