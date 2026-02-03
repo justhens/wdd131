@@ -11,90 +11,97 @@ menuButton.addEventListener("click", () => {
 });
 
 const temples = [
+ 
+  {templeName: "Aba Nigeria",
+    location: "Aba, Nigeria",
+    dedicated: "2005, August, 7",
+    area: 11500,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+  },
   {
+    templeName: "Manti Utah",
+    location: "Manti, Utah, United States",
+    dedicated: "1888, May, 21",
+    area: 74792,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+  },
+  {
+    templeName: "Payson Utah",
+    location: "Payson, Utah, United States",
+    dedicated: "2015, June, 7",
+    area: 96630,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+  },
+  {
+    templeName: "Yigo Guam",
+    location: "Yigo, Guam",
+    dedicated: "2020, May, 2",
+    area: 6861,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+  },
+  {
+    templeName: "Washington D.C.",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+  },
+  {
+    templeName: "Lima Perú",
+    location: "Lima, Perú",
+    dedicated: "1986, January, 10",
+    area: 9600,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+  },
+  {
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+   {
     templeName: "Salt Lake Temple",
     location: "Salt Lake City, Utah",
-    dedicated: 1893,
+    dedicated: "1893, April, 6",
     area: 382207,
     imageUrl: "images/temple1.jpg"
   },
   {
     templeName: "Rome Italy Temple",
     location: "Rome, Italy",
-    dedicated: 2019,
+    dedicated: "2019, March, 10",
     area: 41010,
     imageUrl: "images/temple2.jpg"
   },
   {
     templeName: "Paris France Temple",
     location: "Paris, France",
-    dedicated: 2017,
+    dedicated: "2017, May, 21",
     area: 44175,
     imageUrl: "images/temple3.jpg"
   },
   {
     templeName: "Fort Lauderdale Florida Temple",
     location: "Fort Lauderdale, Florida",
-    dedicated: 2014,
+    dedicated: "2014, May, 4",
     area: 30500,
     imageUrl: "images/temple4.jpg"
   },
   {
     templeName: "Laie Hawaii Temple",
     location: "Laie, Hawaii",
-    dedicated: 1919,
+    dedicated: "1919, November, 27",
     area: 42100,
     imageUrl: "images/temple5.jpg"
   },
-  {
-    templeName: "Madrid Spain Temple",
-    location: "Madrid, Spain",
-    dedicated: 1999,
-    area: 45800,
-    imageUrl: "images/temple6.jpg"
-  },
-  {
-    templeName: "London England Temple",
-    location: "London, England",
-    dedicated: 1958,
-    area: 42652,
-    imageUrl: "images/temple7.jpg"
-  },
-  {
-    templeName: "San Diego California Temple",
-    location: "San Diego, California",
-    dedicated: 1993,
-    area: 72000,
-    imageUrl: "images/temple8.jpg"
-  },
-  {
-    templeName: "Manila Philippines Temple",
-    location: "Manila, Philippines",
-    dedicated: 1984,
-    area: 26683,
-    imageUrl: "images/temple9.jpg"
-  },
-  {
-    templeName: "Bountiful Utah Temple",
-    location: "Bountiful, Utah",
-    dedicated: 1995,
-    area: 104000,
-    imageUrl: "images/temple10.jpg"
-  },
-  {
-    templeName: "São Paulo Brazil Temple",
-    location: "São Paulo, Brazil",
-    dedicated: 1978,
-    area: 59246,
-    imageUrl: "images/temple11.jpg"
-  },
-  {
-    templeName: "Denver Colorado Temple",
-    location: "Denver, Colorado",
-    dedicated: 1986,
-    area: 29117,
-    imageUrl: "images/temple12.jpg"
-  }
 ];
 
 function renderTemples(filteredTemples) {
