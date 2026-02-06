@@ -6,6 +6,8 @@
   --text-color: #1f2933;
   --muted-text: #4b5563;
   --border-color: #d1d5db;
+  --star-color: #cbd5e1;
+  --star-selected: #f5b301;
 }
 body {
   font-family: Arial, sans-serif;
@@ -31,6 +33,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
+
 label {
   display: block;
   margin-top: 1rem;
@@ -44,6 +47,10 @@ input, select, textarea {
   border-radius: 6px;
   border: 1px solid var(--border-color);
   font-size: 1rem;
+}
+#product {
+  font-size: 1.1rem;
+  padding: 0.6rem;
 }
 
 fieldset {
@@ -65,12 +72,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: var(--primary-hover);
 }
-#product {
-  font-size: 1.1rem;
-  padding: 0.6rem;
-}
 
-/* star rating */
+/* Star rating */
 .star-rating {
   direction: rtl;
   font-size: 1.4rem;
@@ -89,17 +92,16 @@ input[type="submit"]:hover {
 .star-rating label {
   display: inline-block;
   cursor: pointer;
-  color: #cbd5e1;
+  color: var(--star-color);
   padding: 0 3px;
 }
 
 .star-rating label:hover,
 .star-rating label:hover ~ label,
 .star-rating input:checked ~ label {
-  color: #f5b301;
+  color: var(--star-selected);
 }
 
-/* features / checkboxes */
 .features label {
   display: flex;
   align-items: center;
@@ -111,4 +113,26 @@ input[type="submit"]:hover {
   width: auto;
   transform: scale(1.4);
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .features label {
+    font-size: 0.95rem;
+  }
+
+  #product {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 600px) {
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
