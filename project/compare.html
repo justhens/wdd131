@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Cars</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="description" content="Compare two cars side by side by price, MPG, and performance.">
+<meta name="author" content="Justin Henson">
+
+</head>
+<body>
+  <header>
+  <a href="index.html">
+    <img src="images/logo.png" alt="Car Compare Logo" class="logo">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="compare.html">Compare Cars</a>
+    <a href="library.html">Car Library</a>
+  </nav>
+</header>
+  <section class="container">
+    <h2>Compare Cars</h2>
+    <div class="controls">
+      <div class="form-group">
+        <label for="car1-select">Car One</label>
+        <select id="car1-select">
+          <option value="">Select a car</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="car2-select">Car Two</label>
+        <select id="car2-select">
+          <option value="">Select a car</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="compareBtn">Compare</button>
+    <button id="saveBtn">Save Comparison</button>
+
+    <div id="comparison-section" class="comparison-section">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Car Compare. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
