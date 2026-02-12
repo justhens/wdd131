@@ -37,39 +37,73 @@
   </section>
 
   <!-- Features Section -->
-  <main class="container">
-    <section class="card">
-      <h2>Why Use Car Compare?</h2>
+  <section class="card features-section">
+  <h2 class="section-title">Why Use Car Compare?</h2>
 
-      <div class="features">
-        <div class="feature">
-          <h3>Side-by-Side Comparisons</h3>
-          <p>
-            View important stats next to each other so differences
-            are easy to spot.
-          </p>
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Side-by-Side Comparisons</h3>
+      <p>
+        Easily compare important stats next to each other so differences are clear and simple to understand.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Visual Performance Stats</h3>
+      <p>
+        Clean visuals and stat highlights help you instantly see which car performs better.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Save Your Favorites</h3>
+      <p>
+        Keep track of your top comparisons and revisit them anytime.
+      </p>
+    </div>
+  </div>
+
+  <a href="compare.html" class="btn-primary large-btn cta-btn">
+    Compare Cars Now
+  </a>
+</section>
+
+
+   <!-- Contact Section -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-box">
+      <h2>Need Help? Contact Us</h2>
+      <p>If you have questions about comparing cars, send us a message.</p>
+
+      <form id="contactForm" class="contact-form">
+        
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required>
         </div>
 
-        <div class="feature">
-          <h3>Visual Stats</h3>
-          <p>
-            Highlighted stats and animated bars help you quickly see which car performs better.
-          </p>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required>
         </div>
 
-        <div class="feature">
-          <h3>Save Favorites</h3>
-          <p>
-            Save your favorite comparisons and come back to them later.
-          </p>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" rows="5" required></textarea>
         </div>
-      </div>
 
-      <a href="compare.html" class="btn-primary large-btn">
-        Compare Cars Now
-      </a>
-    </section>
-  </main>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+
+      <p id="confirmationMessage" class="confirmation"></p>
+    </div>
+  </div>
+</section>
+
+<script src="scripts/main.js"></script>
+
+
 
   <!-- Footer -->
   <footer>

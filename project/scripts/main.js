@@ -169,3 +169,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("compareBtn").addEventListener("click", compareCars);
   document.getElementById("saveBtn").addEventListener("click", saveComparison);
 });
+
+const form = document.getElementById("contactForm");
+const confirmation = document.getElementById("confirmationMessage");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  confirmation.textContent = "Message sent successfully! We will contact you soon.";
+
+  form.reset(); 
+});
