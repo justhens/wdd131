@@ -308,6 +308,12 @@ button:hover,
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 767px) {
+  header nav a {
+    padding: 0.2rem 0.5rem; 
+    font-size: 0.9rem;   
+  }
+}
 .contact-box {
   background-color: #ffffff;
   padding: 2rem;
